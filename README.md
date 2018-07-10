@@ -18,10 +18,26 @@ This project makes use of bitluni's composite video and sound libraries. Without
 5. Continue below.
 
 ### Getting started using PlatformIO
-*This will be updated once the project is uploaded*
+1. Install the latest Python 2.7.x for your platform from https://python.org or your package manager
+2. Install PlatformIO from https://platform.io
+3. Download this repo as a ZIP file or git clone it.
+4. Open a terminal/command prompt and in the root folder where the `lib` and `src` folders are, enter:
+```
+platformio run
+(compile process will start and take a bit of time)
+platformio run -t upload
+(the upload process will start. WARNING: Any existing firmware on the ESP32 WILL BE DESTROYED!!)
+```
+5. If no errors occurred the firmware has been uploaded to the ESP32 and it should auto reboot and display an image on the composite output. If so, you're winner winner chicken dinner.
 
 ### Getting started using Arduino IDE
-*This will be updated once the project is uploaded*
+**This is currently untested as I don't have the IDE installed, but it should be okay...**
+1. Make sure you have installed the ESP32 platform for the Arduino IDE.
+2. Download this repo as a ZIP file or git clone it.
+3. Inside the `src` folder, rename `main.cpp` to `esp32-composite-kickstart.ino`. Open the renamed file with the Arduino IDE.
+4. Make sure your ESP32 is plugged in. Ensure the device is set to a ESP32 device (mine is a generic one, so I chose ESP32 Development Unit). Check the upload port to ensure it's not flashing code to the wrong device and leave the speed alone.
+4. Click "Verify" to ensure it compiles alright, then click "Upload". **WARNING: Any existing firmware on the ESP32 WILL BE DESTROYED!!**
+5. When it's done uploading, you're winner winner chicken dinner.
 
 ### Improvements and Problems
 **Warnings that are generated from the compile process can be safely ignored unless it throws an error because the warning was potentially fatal.**
