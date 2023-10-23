@@ -1,6 +1,11 @@
 # esp32-composite-kickstart
 A kickstart project for ESP32 Composite Graphics
 
+## This project is obsolete.
+I no longer work with ESP32 Composite stuffs and I do not have time to mantain this kickstart project.
+
+Sorry to disappoint. It is what it is. 😔
+
 **This project is intended for use with the PlatformIO and Eclipse IDE.
 However, if you don't like this for whatever reason, I will provide a Arduino project file that'll help you out.**
 ## What's this?
